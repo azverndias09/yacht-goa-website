@@ -8,19 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20inquire%20about%20booking%20Yacht%20Goa" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Floating Book Now Button -->
+    <div class="floating-buttons">
+        <a href="#contact" class="book-now-float" aria-label="Book Now">
+            <i class="fas fa-calendar-check"></i>
+            <span>Book Now</span>
+        </a>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="https://via.placeholder.com/150x50/1a3a52/ffffff?text=YACHT+GOA" alt="Yacht Goa Logo">
+                <img src="folder2/logo.png" alt="Yacht Goa Logo">
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -40,10 +44,8 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-video-container">
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="https://cdn.coverr.co/videos/coverr-yacht-sailing-on-the-ocean-at-sunset-5301/1080p.mp4" type="video/mp4">
-            </video>
+        <div class="hero-image-container">
+            <img src="folder2/yacht-hero.jpg" alt="Yacht Goa sailing on the waters of Goa" class="hero-image" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -105,7 +107,7 @@
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&h=600&fit=crop" alt="Yacht Goa">
+                    <img src="folder2/yacht-about.jpg" alt="Yacht Goa - The Rinker 260EC: Edith" loading="lazy">
                 </div>
             </div>
         </div>
@@ -293,69 +295,82 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop" alt="Yacht sunset cruise">
+                    <img src="folder2/gallery-1.jpg" alt="Yacht Goa sailing on the waters" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=800&h=600&fit=crop" alt="Yacht deck view">
+                    <img src="folder2/gallery-2.jpg" alt="Guests enjoying Yacht Goa experience" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=800&h=600&fit=crop" alt="Yacht interior">
+                    <img src="folder2/gallery-3.jpg" alt="Memorable moments aboard Yacht Goa" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="https://images.unsplash.com/photo-1544551763-92bfe28a7d16?w=800&h=600&fit=crop" alt="Yacht sailing">
+                    <img src="folder2/gallery-4.jpg" alt="Yacht Goa deck view" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
+                <!-- Video Item occupying the rightmost column (after 4th image) -->
+                <div class="gallery-item gallery-video-item" data-aos="zoom-in">
+                    <video class="gallery-video" muted playsinline loop poster="folder2/gallery-1.jpg">
+                        <source src="folder2/i am sailing.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-play-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <button class="video-mute-toggle" aria-label="Toggle Mute">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
-                    <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=800&h=600&fit=crop" alt="Yacht party">
+                    <img src="folder2/gallery-5.jpg" alt="Yacht Goa with guests on board" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
-                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=600&fit=crop" alt="Yacht at sea">
+                    <img src="folder2/gallery-6.jpg" alt="Beautiful moments on Yacht Goa" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop" alt="Yacht aerial view">
+                    <img src="folder2/gallery-7.jpg" alt="Yacht Goa bow view" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800">
-                    <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&h=600&fit=crop" alt="Luxury yacht experience">
+                    <img src="folder2/gallery-8.jpg" alt="Yacht Goa experience" loading="lazy" decoding="async">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900">
+                    <img src="folder2/gallery-9.jpg" alt="Guests relaxing on Yacht Goa" loading="lazy" decoding="async">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000">
+                    <img src="folder2/gallery-10.jpg" alt="Moments aboard Yacht Goa" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section class="video-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Experience the Journey</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="video-container" data-aos="fade-up">
-                <video controls poster="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=1200&h=675&fit=crop">
-                    <source src="https://cdn.coverr.co/videos/coverr-luxury-yacht-sailing-4758/1080p.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div id="gallery-swiper" class="swiper" aria-hidden="true" hidden>
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -367,58 +382,67 @@
                 <h2 class="section-title">What Our Guests Say</h2>
                 <div class="title-underline"></div>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "An absolutely magical experience! The sunset cruise was breathtaking, and the crew made sure 
+                                every detail was perfect. Highly recommend for couples!"
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Sarah & John</strong>
+                                <span>Romantic Sunset Cruise</span>
+                            </div>
+                        </div>
                     </div>
-                    <p class="testimonial-text">
-                        "An absolutely magical experience! The sunset cruise was breathtaking, and the crew made sure 
-                        every detail was perfect. Highly recommend for couples!"
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Sarah & John</strong>
-                        <span>Romantic Sunset Cruise</span>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "We celebrated my wife's birthday on Yacht Goa and it was unforgettable. The decoration, the 
+                                service, and the beautiful views made it a day to remember."
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Rahul Sharma</strong>
+                                <span>Birthday Celebration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Perfect for our wedding photoshoot! The yacht provided stunning backdrops and the crew was 
+                                very accommodating. Our photos turned out amazing!"
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Priya & Arjun</strong>
+                                <span>Wedding Photoshoot</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "We celebrated my wife's birthday on Yacht Goa and it was unforgettable. The decoration, the 
-                        service, and the beautiful views made it a day to remember."
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Rahul Sharma</strong>
-                        <span>Birthday Celebration</span>
-                    </div>
-                </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Perfect for our wedding photoshoot! The yacht provided stunning backdrops and the crew was 
-                        very accommodating. Our photos turned out amazing!"
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Priya & Arjun</strong>
-                        <span>Wedding Photoshoot</span>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -516,7 +540,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="https://via.placeholder.com/150x50/1a3a52/ffffff?text=YACHT+GOA" alt="Yacht Goa Logo" class="footer-logo">
+                    <img src="folder2/logo.png" alt="Yacht Goa Logo" class="footer-logo">
                     <p>Experience Goa from the Sea. Luxury yacht cruises for unforgettable moments.</p>
                 </div>
                 <div class="footer-section">
@@ -561,6 +585,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
