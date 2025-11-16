@@ -610,3 +610,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Toast utility and 'Other Experiences' button handler
+function showToast(message, duration = 2200) {
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+    toast.textContent = message;
+    toast.setAttribute('aria-hidden', 'false');
+    toast.classList.add('show');
+    if (toast._hideTimer) clearTimeout(toast._hideTimer);
+    toast._hideTimer = setTimeout(() => {
+        toast.classList.remove('show');
+        toast.setAttribute('aria-hidden', 'true');
+    }, duration);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const otherBtn = document.querySelector('.coming-soon-btn');
+    if (otherBtn) {
+        otherBtn.addEventListener('click', () => {
+            showToast('More activities coming soon!');
+        });
+    }
+});
