@@ -104,7 +104,7 @@ if (bookingForm) {
             `Package: ${packageNames[packageType] || packageType}\n` +
             `Message: ${message || 'N/A'}`;
 
-        const whatsappURL = `https://wa.me/919876543210?text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappURL = `https://wa.me/918380091909?text=${encodeURIComponent(whatsappMessage)}`;
 
         // Open WhatsApp
         window.open(whatsappURL, '_blank');
