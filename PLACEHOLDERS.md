@@ -8,7 +8,7 @@
 |------|-------------------|------|---------|
 | **Phone Number** | +91 98765 43210 | index.html | 28, 52, 476, 515 |
 | | | script.js | 78 |
-| **Email Address** | info@yachtgoa.com | index.html | 484, 516 |
+| **Email Address** | Rinkerluxuryyacht@gmail.com | index.html | 484, 516 |
 | **WhatsApp Number** | 919876543210 | index.html | 28, 488 |
 | | | script.js | 78 |
 
