@@ -632,4 +632,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showToast('More activities coming soon!');
         });
     }
+    
+    const otherLink = document.querySelector('.other-experiences-link');
+    if (otherLink) {
+        otherLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showToast('More activities coming soon!');
+        });
+    }
 });
